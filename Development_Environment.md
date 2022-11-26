@@ -61,4 +61,4 @@
 21. um plugin conhecido pro ZSH seria o [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone):
     - Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch
     - Depois iremos seguir a instalação da documentação e abrir novo terminal pra settar o novo plugin
-
+22. Falta instalar ruby e rails
