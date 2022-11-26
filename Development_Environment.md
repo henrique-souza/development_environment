@@ -58,7 +58,8 @@
     - Digitar ```export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH``` no final do documento e salvar o documento
     - Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
 
-21. um plugin conhecido pro ZSH seria o [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone):
+21. Um plugin conhecido pro ZSH seria o [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone):
     - Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch
-    - Depois iremos seguir a instalação da documentação e abrir novo terminal pra settar o novo plugin
-22. Falta instalar ruby e rails
+    - Depois iremos seguir a [instalação da documentação](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone) e abrir novo terminal pra settar o novo plugin
+
+22. Instalar linguagem a ser usada e usar o Arch.
