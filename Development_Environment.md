@@ -47,3 +47,18 @@
 
 17. Instalar o **PowerLevel10k**:
     - Seguir [documentação do PowerLeve10k para Arch Linux](https://github.com/romkatv/powerlevel10k#arch-linux)
+
+18. Executar o comando ```chsh -s /usr/bin/zsh``` pra [padronizar o zsh como o Shell principal](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+
+19. Abrir nova aba pra poder configurar o ZSH
+    - Caso queira mudar alguma configuração indesejada, rodar ```p10k configure```
+
+20. Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não iremos conseguir, pois ainda falta uma configuração no ZSH:
+    - Abrir as configurações do ZSH executando ```code ~/.zshrc```
+    - Digitar ```export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH``` no final do documento e salvar o documento
+    - Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
+
+21. um plugin conhecido pro ZSH seria o [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone):
+    - Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch
+    - Depois iremos seguir a instalação da documentação e abrir novo terminal pra settar o novo plugin
+
