@@ -1,27 +1,28 @@
 # Instalação de Ambiente de Desenvolvimento
 
-1. Executar ```wsl --install```
+1. Executar ```wsl --install``` em algum Terminal
 
-2. Reinciar o PC
+2. Reinciar o PC e abrir novamente o Terminal
+    - Se não iniciar no Ubuntu, abrir o Ubuntu
 
 3. Digitar user e senha (pode ser um espaço)
 
 4. Abrir o [Documentação do Arch Linux pra WSL 2][def]
 
-5. Baixar zip, extrair o zip e colar no Disco Local
+5. Baixar zip, extrair o zip e no Disco Local
 
 6. Abrir a pasta C:\Arch e rodar ```.\Arch``` para que o **Arch.exe** seja executado
     - Reiniciar o PC novamente
 
 7. Depois do Arch instalado, podemos abrir o sistema.
 
-8. Voltamos para [Documentação do Arch Linux pra WSL 2][def] e seguimos as [Configurações após a instalação][def2], não precisando fazer o passo de senha, apenas se necessite.
+8. Voltamos para [Documentação do Arch Linux pra WSL 2][def] e seguimos as [Configurações após a instalação][def2], não precisando fazer o passo de senha, apenas se preferir.
 
 9. Rode ```sudo pacman -Syyuu``` pra atualizar o sistema
 
 10. Depois rode um ```sudo pacman -S wget``` e depois ```code .``` pra poder instalar e testar o Visual Studio Code no Arch.
 
-11. Para instalar o LunarVim, precisamos:
+11. Para instalar o **LunarVim**, precisamos:
     - Instalar **base-devel** com ```sudo pacman -S base-devel```
     - Instalar **Git** com ```sudo pacman -S git```
         - Configurar o git com ```git config --global user.name "Seu nome completo"``` e ```git config --global user.email seuemail@exemplo.br"```
