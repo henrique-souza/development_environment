@@ -63,6 +63,8 @@
     - Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch
     - Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
 
+22. Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar ```chmod +x bin/setup```
+
 22. Instalar linguagem a ser usada e usar o Arch.
 
 [def]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/
