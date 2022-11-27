@@ -24,7 +24,7 @@
 11. Para instalar o LunarVim, precisamos:
     - Instalar **base-devel** com ```sudo pacman -S base-devel```
     - Instalar **Git** com ```sudo pacman -S git```
-        - Configurar o git com ```git config --global user.name "Seu nome completo" ``` e ```git config --global user.email seuemail@exemplo.br" ```
+        - Configurar o git com ```git config --global user.name "Seu nome completo"``` e ```git config --global user.email seuemail@exemplo.br"```
     - Instalar **neovim** com ```sudo pacman -S neovim```
     - E seguir as instalações que a [Documentação do LunarVim lista](https://www.lunarvim.org/docs/installation#prerequisites), como **make**, **pip** (com o comando ```sudo pacman -S python-pip```), **Python** e principalmente o **Cargo** (gestor de sistema e pacotes de **Rust**).
         - Para instalar o **Node.js**, precisamos rodar ```sudo pacman -S curl``` e ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash``` e rode um ```nvm install --lts``` para instalar o Release do Node.
