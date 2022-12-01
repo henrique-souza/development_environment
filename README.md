@@ -65,7 +65,9 @@
 
 22. Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar ```chmod +x bin/setup```
 
-23. Instalar linguagem a ser usada e usar o Arch.
+23. Instalar linguagem a ser usada e usar o Arch[^1].
+
+[^1]: Em breve atualizar documentação pra Inglês
 
 [def]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/
 [def2]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/#configura%C3%A7%C3%A3o-ap%C3%B3s-a-instala%C3%A7%C3%A3o
