@@ -27,7 +27,7 @@
     - Instalar **Git** com ```sudo pacman -S git```
         - Configurar o git com ```git config --global user.name "Seu nome completo"``` e ```git config --global user.email seuemail@exemplo.br"```
     - Instalar **neovim** com ```sudo pacman -S neovim```
-    - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **make**, **pip** (com o comando ```sudo pacman -S python-pip```), **Python** e principalmente o **Cargo** (gestor de sistema e pacotes de **Rust**).
+    - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **make**, **pip** (com o comando ```sudo pacman -S python-pip```), **Python** e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
         - Para instalar o **Node.js**, precisamos rodar ```sudo pacman -S curl``` e ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash``` e rode um ```nvm install --lts``` para instalar o Release do Node.
 
 12. Depois de todos passos acima, precisamos executar um ```export PATH=~/.cargo/bin:~/.local/bin:$PATH``` para poder habilitar tudo que instalamos anteriormente
@@ -75,3 +75,4 @@
 [def4]: https://github.com/romkatv/powerlevel10k#arch-linux
 [def5]: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 [def6]: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
+[def7]: https://www.rust-lang.org/tools/install
