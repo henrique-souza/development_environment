@@ -3,25 +3,34 @@
 1. Executar ```wsl --install``` em algum Terminal
 
 2. Reinciar o PC e abrir novamente o Terminal
-    - Se não iniciar no Ubuntu, abrir o Ubuntu
+    - Se o computador não iniciar com Ubuntu aberto, abra o Ubuntu através do Terminal
 
-3. Digitar user e senha (pode ser um espaço)
+3. Digitar user e senha ~~(pode ser um espaço)~~
 
-4. Abrir o [Documentação do Arch Linux pra WSL 2][def]
+4. Abrir a [documentação do Arch Linux pra WSL 2][def]
 
-5. Baixar zip, extrair o zip e no Disco Local
+5. Baixar ZIP, extrair o ZIP no Disco Local
 
-6. Abrir a pasta C:\Arch e rodar ```.\Arch``` para que o **Arch.exe** seja executado
-    - Reiniciar o PC novamente
+6. Abrir a pasta C:\Arch com ```cd Arch``` e rodar ```.\Arch``` para que o **Arch.exe** seja executado
 
-7. Depois do Arch instalado, podemos abrir o sistema.
-    - Apenas verificar se a opção "**Executar esse perfil como Administrador**" está marcada, no Windows Terminal, dentro do perfil do Arch.
+7. Depois do Arch instalado, verifique se a opção "**Executar esse perfil como Administrador**" está marcada, no Windows Terminal, dentro do perfil do Arch, e então podemos abrir o sistema.
 
 8. Voltamos para [Documentação do Arch Linux pra WSL 2][def] e seguimos as [Configurações após a instalação][def2], não precisando fazer o passo de senha, apenas se preferir.
 
-9. Rode ```sudo pacman -Syyuu``` pra atualizar o sistema
+9. No fim dos comandos, precisamos avisar qual usuário será o padrão parao Arch
+    - Precisamos abrir novamente o Terminal (sem ser o do Arch)
+    - Abrir a pasta com ```cd Arch```
+    - E digitar ```.\Arch.exe config --default-user {seu usuário}``` (se você estiver na Prompt de Comando, não precisa digitar **".\\"** no início do comando)
 
-10. Depois rode um ```sudo pacman -S wget``` e depois ```code .``` pra poder instalar e testar o Visual Studio Code no Arch.
+9. Para atualizar o Arch, antes dos demais comandos:
+    ```shell
+    sudo pacman -Syyuu
+    ```
+
+10. Depois vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra poder instalar e testar o Visual Studio Code no Arch
+    ```shell
+    sudo pacman -S wget
+    ```
 
 11. Para instalar o **LunarVim**, precisamos:
     - Instalar **base-devel**
@@ -37,17 +46,16 @@
              git config --global user.name "Seu nome completo"
              ```
              ```shell
-             git config --global user.email seuemail@exemplo.br"
+             git config --global user.email seuemail@exemplo.br
              ```
     - Instalar **NeoVim**
         ```shell
         sudo pacman -S neovim
         ```
-    - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **Python**
+    - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **Python**, executando comando abaixo, e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
         ```shell
         sudo pacman -S python-pip
         ```
-        e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
         - Para instalar o **Node.js**, precisamos rodar
             ```shell
             sudo pacman -S curl
@@ -94,11 +102,10 @@
 
 20. Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não iremos conseguir, pois ainda falta uma configuração no ZSH:
     - Abrir as configurações do ZSH executando ```code ~/.zshrc```
-    - Digitar
+    - E colar o comando abaixo no final do documento e salvar o documento
         ```shell
         export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
         ```
-        no final do documento e salvar o documento
     - Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
 
 21. Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
