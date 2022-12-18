@@ -94,11 +94,7 @@
 
 17. Instalar o **PowerLevel10k**:
     - Seguir [documentação do PowerLeve10k para Arch Linux][def4]
-    - Abrir o arquivo de configuração do zsh rodando ```code ~/.zshrc``` e colar o comando abaixo para habilitar o PL10K no Terminal
-        ```shell
-        source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-        ```
-    - Depois do passo acima, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch para o MesloLGS NF recém instalado
+    - Depois do passo da documentação, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch, no Terminal, para o MesloLGS NF recém instalado
     - Após instalar e configurar a fonte, precisaremos rodar o comando abaixo para poder instalar as dependências necessárias para o PL10K
         ```shell
         yay -S powerline-fonts awesome-terminal-fonts
