@@ -15,9 +15,8 @@
 
 7. Depois do Arch instalado, verifique se a opção "**Executar esse perfil como Administrador**" está marcada, no Windows Terminal, dentro do perfil do Arch, e então podemos abrir o sistema.
 
-8. Voltamos para [Documentação do Arch Linux pra WSL 2][def] e seguimos as [Configurações após a instalação][def2], não precisando fazer o passo de senha, apenas se preferir.
-
-9. No fim dos comandos, precisamos avisar qual usuário será o padrão parao Arch
+8. Voltamos para [Documentação do Arch Linux pra WSL 2][def] e seguimos as [Configurações após a instalação][def2]. Vamos até os [passos finais][def8] neste tópico
+    - Nos comandos iniciais, precisamos avisar qual usuário será o padrão para o Arch
     - Precisamos abrir novamente o Terminal (sem ser o do Arch)
     - Abrir a pasta com ```cd Arch```
     - E digitar ```.\Arch.exe config --default-user {seu usuário}``` (se você estiver na Prompt de Comando, não precisa digitar **".\\"** no início do comando)
@@ -27,7 +26,7 @@
     sudo pacman -Syyuu
     ```
 
-10. Depois vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra poder instalar e testar o Visual Studio Code no Arch
+10. Vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra poder instalar e testar o Visual Studio Code no Arch
     ```shell
     sudo pacman -S wget
     ```
@@ -128,3 +127,4 @@
 [def5]: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 [def6]: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
 [def7]: https://www.rust-lang.org/tools/install
+[def8]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/#inicializar-o-chaveiro
