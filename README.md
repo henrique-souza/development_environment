@@ -77,13 +77,10 @@
     - Com a tecla **```Espaço```** dá pra acessar alguns dos **menus principais** do LunarVim e ```Ctrl + H``` vai pro lado esquerdo e ```Ctrl + L``` vai pro lado direito
 
 14. Instalar o **yay**:
-    - Abrir a pasta temporária do Arch com ```cd /tmp```
-    - Clonar o repositório do Yay
+    - Abrir a pasta temporária do Arch com ```cd /tmp``` e executar
         ```shell
-        git clone https://aur.archlinux.org/yay.git
+        git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
         ```
-    - Rodar ```cd yay```
-    - Depois rodar ```makepkg -si``` para instalar o Yay
 
 15. A partir deste momento, banimos o uso do ```pacman``` e usaremos ```yay``` para instalar dependencias. E vamos instalar o ```zsh```
 
