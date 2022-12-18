@@ -87,8 +87,10 @@
 
 15. A partir deste momento, banimos o uso do ```pacman``` e usaremos ```yay``` para instalar dependencias. E vamos instalar o ```zsh```
 
-16. Instalar o **ZSH**:
-    - Rodar ```yay -S zsh```
+16. Instalar o **ZSH**
+    ```shell
+    yay -S zsh
+    ```
 
 17. Instalar o **PowerLevel10k**:
     - Seguir [documentação do PowerLeve10k para Arch Linux][def4]
