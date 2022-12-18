@@ -15,6 +15,7 @@
     - Reiniciar o PC novamente
 
 7. Depois do Arch instalado, podemos abrir o sistema.
+    - Apenas verificar se a opção "**Executar esse perfil como Administrador**" está marcada, no Windows Terminal, dentro do perfil do Arch.
 
 8. Voltamos para [Documentação do Arch Linux pra WSL 2][def] e seguimos as [Configurações após a instalação][def2], não precisando fazer o passo de senha, apenas se preferir.
 
@@ -23,9 +24,22 @@
 10. Depois rode um ```sudo pacman -S wget``` e depois ```code .``` pra poder instalar e testar o Visual Studio Code no Arch.
 
 11. Para instalar o **LunarVim**, precisamos:
-    - Instalar **base-devel** com ```sudo pacman -S base-devel```
-    - Instalar **Git** com ```sudo pacman -S git```
-        - Configurar o git com ```git config --global user.name "Seu nome completo"``` e ```git config --global user.email seuemail@exemplo.br"```
+    - Instalar **base-devel**
+        ```
+        sudo pacman -S base-devel
+        ```
+    - Instalar **Git**
+        ```
+        sudo pacman -S git
+        ```
+        - Configurar o **Git**
+             ```
+             git config --global user.name "Seu nome completo"
+             ```
+             e
+             ```
+             git config --global user.email seuemail@exemplo.br"
+             ```
     - Instalar **neovim** com ```sudo pacman -S neovim```
     - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **make**, **pip** (com o comando ```sudo pacman -S python-pip```), **Python** e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
         - Para instalar o **Node.js**, precisamos rodar ```sudo pacman -S curl``` e ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash``` e rode um ```nvm install --lts``` para instalar o Release do Node.
