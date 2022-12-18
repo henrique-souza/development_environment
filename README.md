@@ -40,18 +40,43 @@
              ```
              git config --global user.email seuemail@exemplo.br"
              ```
-    - Instalar **neovim** com ```sudo pacman -S neovim```
-    - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **make**, **pip** (com o comando ```sudo pacman -S python-pip```), **Python** e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
-        - Para instalar o **Node.js**, precisamos rodar ```sudo pacman -S curl``` e ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash``` e rode um ```nvm install --lts``` para instalar o Release do Node.
+    - Instalar **NeoVim**
+        ```
+        sudo pacman -S neovim
+        ```
+    - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **Python**
+        ```
+        sudo pacman -S python-pip
+        ```
+        e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
+        - Para instalar o **Node.js**, precisamos rodar
+            ```
+            sudo pacman -S curl
+            ```
+            e
+            ```
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+            ```
+            e para instalar o Release do Node:
+            ```
+            nvm install --lts
+            ```
 
-12. Depois de todos passos acima, precisamos executar um ```export PATH=~/.cargo/bin:~/.local/bin:$PATH``` para poder habilitar tudo que instalamos anteriormente
+12. Depois de todos passos acima, precisamos executar
+    ```
+    export PATH=~/.cargo/bin:~/.local/bin:$PATH
+    ```
+    para poder habilitar tudo que instalamos anteriormente
 
 13. Executando ```lvim``` o LunarVim é aberto normalmente.
     - Com a tecla **Espaço** dá pra acessar alguns dos menus principais do LunarVim e ```Ctrl + H``` vai pro lado esquerdo e ```Ctrl + L``` vai pro lado direito
 
 14. Instalar o **yay**:
     - Abrir a pasta temporária do Arch com ```cd /tmp```
-    - Clonar o repositório do Yay ```git clone https://aur.archlinux.org/yay.git```
+    - Clonar o repositório do Yay
+        ```
+        git clone https://aur.archlinux.org/yay.git
+        ```
     - Rodar ```cd yay```
     - Depois rodar ```makepkg -si``` para instalar o Yay
 
@@ -70,14 +95,21 @@
 
 20. Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não iremos conseguir, pois ainda falta uma configuração no ZSH:
     - Abrir as configurações do ZSH executando ```code ~/.zshrc```
-    - Digitar ```export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH``` no final do documento e salvar o documento
+    - Digitar
+        ```
+        export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
+        ```
+        no final do documento e salvar o documento
     - Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
 
 21. Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
     - Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch
     - Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
 
-22. Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar ```chmod +x bin/setup```
+22. Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar
+    ```
+    chmod +x bin/setup
+    ```
 
 23. Instalar linguagem a ser usada e usar o Arch[^1].
 
