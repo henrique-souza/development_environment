@@ -94,11 +94,23 @@
 
 17. Instalar o **PowerLevel10k**:
     - Seguir [documentação do PowerLeve10k para Arch Linux][def4]
+    - Abrir o arquivo de configuração do zsh rodando ```code ~/.zshrc``` e colar o comando abaixo para habilitar o PL10K no Terminal
+        ```shell
+        source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+        ```
+    - Depois do passo acima, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch para o MesloLGS NF recém instalado
+    - Após instalar e configurar a fonte, precisaremos rodar o comando abaixo para poder instalar as dependências necessárias para o PL10K
+        ```shell
+        yay -S powerline-fonts awesome-terminal-fonts
+        ```
 
 18. Executar o comando ```chsh -s /usr/bin/zsh``` pra [padronizar o zsh como o Shell principal][def5]
 
 19. Abrir nova aba pra poder configurar o ZSH
-    - Caso queira mudar alguma configuração indesejada, rodar ```p10k configure```
+    - Caso queira mudar alguma configuração indesejada, rodar
+        ```shell
+        p10k configure
+        ```
 
 20. Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não iremos conseguir, pois ainda falta uma configuração no ZSH:
     - Abrir as configurações do ZSH executando ```code ~/.zshrc```
@@ -130,3 +142,4 @@
 [def7]: https://www.rust-lang.org/tools/install
 [def8]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/#inicializar-o-chaveiro
 [def9]: https://www.lunarvim.org/docs/installation#release
+[def10]: https://github.com/romkatv/powerlevel10k#manual-font-installation
