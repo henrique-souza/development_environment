@@ -25,45 +25,44 @@
 
 11. Para instalar o **LunarVim**, precisamos:
     - Instalar **base-devel**
-        ```
+        ```shell
         sudo pacman -S base-devel
         ```
     - Instalar **Git**
-        ```
+        ```shell
         sudo pacman -S git
         ```
-        - Configurar o **Git**
-             ```
+        - Configurar o **Git** com os comandos
+             ```shell
              git config --global user.name "Seu nome completo"
              ```
-             e
-             ```
+             ```shell
              git config --global user.email seuemail@exemplo.br"
              ```
     - Instalar **NeoVim**
-        ```
+        ```shell
         sudo pacman -S neovim
         ```
     - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **Python**
-        ```
+        ```shell
         sudo pacman -S python-pip
         ```
         e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
         - Para instalar o **Node.js**, precisamos rodar
-            ```
+            ```shell
             sudo pacman -S curl
             ```
             e
-            ```
+            ```shell
             curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
             ```
             e para instalar o Release do Node:
-            ```
+            ```shell
             nvm install --lts
             ```
 
 12. Depois de todos passos acima, precisamos executar
-    ```
+    ```shell
     export PATH=~/.cargo/bin:~/.local/bin:$PATH
     ```
     para poder habilitar tudo que instalamos anteriormente
@@ -74,7 +73,7 @@
 14. Instalar o **yay**:
     - Abrir a pasta temporária do Arch com ```cd /tmp```
     - Clonar o repositório do Yay
-        ```
+        ```shell
         git clone https://aur.archlinux.org/yay.git
         ```
     - Rodar ```cd yay```
@@ -96,7 +95,7 @@
 20. Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não iremos conseguir, pois ainda falta uma configuração no ZSH:
     - Abrir as configurações do ZSH executando ```code ~/.zshrc```
     - Digitar
-        ```
+        ```shell
         export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
         ```
         no final do documento e salvar o documento
@@ -107,7 +106,7 @@
     - Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
 
 22. Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar
-    ```
+    ```shell
     chmod +x bin/setup
     ```
 
