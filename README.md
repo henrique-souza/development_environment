@@ -117,7 +117,10 @@
     - Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
 
 21. Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
-    - Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch
+    - Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch usando comando
+        ```shell
+        mkdir .zsh
+        ```
     - Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
 
 22. Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar
