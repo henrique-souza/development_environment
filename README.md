@@ -63,19 +63,18 @@
             ```shell
             curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
             ```
-            e para instalar o Release do Node:
+            reinicie o Arch e para instalar o Release do Node
             ```shell
             nvm install --lts
             ```
 
-12. Depois de todos passos acima, precisamos executar
+12. Depois de todos passos acima, precisamos executar o comando abaixo para poder habilitar tudo que instalamos anteriormente e depois, finalmente [instalar o LunarVim com o comando descrito][def9] e todas suas dependencias
     ```shell
     export PATH=~/.cargo/bin:~/.local/bin:$PATH
     ```
-    para poder habilitar tudo que instalamos anteriormente
 
-13. Executando ```lvim``` o LunarVim é aberto normalmente.
-    - Com a tecla **Espaço** dá pra acessar alguns dos menus principais do LunarVim e ```Ctrl + H``` vai pro lado esquerdo e ```Ctrl + L``` vai pro lado direito
+13. Depois dos passos acima, ao digitar ```lvim``` no Terminal, o LunarVim é aberto normalmente
+    - Com a tecla **```Espaço```** dá pra acessar alguns dos **menus principais** do LunarVim e ```Ctrl + H``` vai pro lado esquerdo e ```Ctrl + L``` vai pro lado direito
 
 14. Instalar o **yay**:
     - Abrir a pasta temporária do Arch com ```cd /tmp```
@@ -128,3 +127,4 @@
 [def6]: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
 [def7]: https://www.rust-lang.org/tools/install
 [def8]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/#inicializar-o-chaveiro
+[def9]: https://www.lunarvim.org/docs/installation#release
