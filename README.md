@@ -127,6 +127,8 @@
 
 23. Instalar linguagem a ser usada e usar o Arch[^1].
 
+24. No caso do Ruby e Rails, como eu tive algumas dores de cabeça até entender legal, vou deixar aqui que a instalação mais fácil que consegui foi através do [Rbenv][def11] para este ambiente. 
+
 [^1]: Em breve atualizar documentação pra Inglês
 
 [def]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/
@@ -139,3 +141,4 @@
 [def8]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/#inicializar-o-chaveiro
 [def9]: https://www.lunarvim.org/docs/installation#release
 [def10]: https://github.com/romkatv/powerlevel10k#manual-font-installation
+[def11]: https://github.com/rbenv/rbenv#basic-git-checkout
