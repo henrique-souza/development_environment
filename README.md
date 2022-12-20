@@ -55,7 +55,7 @@
         ```shell
         sudo pacman -S python-pip
         ```
-        - Para instalar o **Node.js**, precisamos rodar
+        - Para [instalar o **Node.js**](https://learn.microsoft.com/pt-br/windows/dev-environment/javascript/nodejs-on-wsl#install-nvm-nodejs-and-npm), precisamos rodar
             ```shell
             sudo pacman -S curl
             ```
@@ -127,7 +127,7 @@
 
 23. Instalar linguagem a ser usada e usar o Arch[^1].
 
-24. No caso do Ruby e Rails, como eu tive algumas dores de cabeça até entender legal, vou deixar aqui que a instalação mais fácil que consegui foi através do [Rbenv][def11] para este ambiente. 
+24. No caso do Ruby e Rails, como eu tive algumas dores de cabeça até entender legal, vou deixar aqui que a instalação mais fácil que consegui foi através do [Rbenv][def11] para este ambiente.
 
 [^1]: Em breve atualizar documentação pra Inglês
 
