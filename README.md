@@ -31,8 +31,11 @@
     sudo pacman -S wget
     ```
 
-11. Para instalar o **LunarVim**, precisamos:
-    - Instalar **base-devel**
+>   Estava intrigado pra saber qual a IDE que o DHH usa em seus vídeos ou em seu trabalho, e se chama **TextMate**, que é disponível apenas para Mac. Para Linux, temos a opção chamada [**Mate**][mate_installation]
+
+
+11. Para instalar o **LunarVim**, precisamos :
+     - Instalar **base-devel**
         ```shell
         sudo pacman -S base-devel
         ```
@@ -142,3 +145,4 @@
 [def9]: https://www.lunarvim.org/docs/installation#release
 [def10]: https://github.com/romkatv/powerlevel10k#manual-font-installation
 [def11]: https://github.com/rbenv/rbenv#basic-git-checkout
+[mate_installation]: https://wiki.mate-desktop.org/introduction/installation/#linux
