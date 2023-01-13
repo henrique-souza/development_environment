@@ -72,7 +72,7 @@
             ```
 
 12. Depois de todos passos acima, precisamos executar o comando abaixo para poder habilitar tudo que instalamos anteriormente e depois, finalmente [instalar o LunarVim com o comando descrito][def9] e todas suas dependencias
-    ```shell
+    ```bash
     export PATH=~/.cargo/bin:~/.local/bin:$PATH
     ```
 
@@ -111,7 +111,7 @@
 20. Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não iremos conseguir, pois ainda falta uma configuração no ZSH:
     - Abrir as configurações do ZSH executando ```code ~/.zshrc```
     - E colar o comando abaixo no final do documento e salvar o documento
-        ```shell
+        ```bash
         export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
         ```
     - Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
@@ -123,15 +123,58 @@
         ```
     - Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
 
-22. Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar
-    ```shell
-    chmod +x bin/setup
-    ```
+22. Instalar o [asdf][asdf]
+
+    - Rodamos
+        ```shell
+        yay -S asdf-vm
+        ```
+
+    - Caso ele peça algumas dependências no final da instalação, pode instalar para que tudo funcione 100% garantido.
+
+    - Vamos abrir novamente o ```.zshrc``` com ```code ~/.zshrc``` pra poder settar o asdf toda vez que abrimos o terminal, colando o comando abaixo e reiniciamos o Terminal:
+        ```bash
+        source /opt/asdf-vm/asdf.sh
+        ```
+
+    - A partir daqui você pode seguir a documentação do asdf para [instalação da sua linguagem através de plugins][asdf_plugins]. No meu caso, preciso instalar Ruby, então precisei digitar
+        ```shell
+        asdf plugin add ruby
+        ```
+
+    - Depois de instalado plugin do Ruby, posso consultar uma lista das versões de Ruby que posso baixar usando ```asdf list-all ruby```
+
+    - Pra baixar e configurar a versão que estou usando em meus projetos atuais, precisei rodar
+        ```shell
+        asdf install ruby 3.2.0
+        ```
+        ou use latest APENAS SE caso a ultima versão seja realmente a que você quer. **Prefira os números de qualquer forma**
+        ```shell
+        asdf install ruby latest
+        ```
+    - Pra poder dizer que essa versão do Ruby é a versão que quero para todo meu ambiente e seus projetos futuros, rodamos
+        ```shell
+        asdf global ruby 3.2.0
+        ```
+        ou (opicional)
+        ```shell
+        asdf global ruby latest
+        ```
+    - Pra poder mudar a versão do Ruby localmente em algum projeto, rodamos
+        ```shell
+        asdf local ruby 3.2.0
+        ```
+        ou (opicional)
+        ```shell
+        asdf local ruby latest
+        ```
 
 23. Instalar linguagem a ser usada e usar o Arch[^1].
 
-24. Instalar o [asdf][asdf]
-    - Rodar (...)
+24. Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar
+    ```shell
+    chmod +x bin/setup
+    ```
 
 25. No caso do Ruby e Rails, como eu tive algumas dores de cabeça até entender legal, vou deixar aqui que a instalação mais fácil que consegui foi através do [Rbenv][def11] para este ambiente.
 
@@ -153,3 +196,4 @@
 [mate_installation]: https://wiki.mate-desktop.org/introduction/installation/#linux
 [ruby_updates]: https://github.com/henrique-souza/crypto_wallet/blob/master/docs/notes.md#atualiza%C3%A7%C3%A3o-de-ruby
 [asdf]: https://asdf-vm.com/pt-br/guide/introduction.html#introducao
+[asdf_plugins]: https://asdf-vm.com/pt-br/guide/getting-started.html#_4-instalando-um-plugin
