@@ -130,9 +130,12 @@
 
 23. Instalar linguagem a ser usada e usar o Arch[^1].
 
-24. No caso do Ruby e Rails, como eu tive algumas dores de cabeça até entender legal, vou deixar aqui que a instalação mais fácil que consegui foi através do [Rbenv][def11] para este ambiente.
+24. Instalar o [asdf][asdf]
+    - Rodar (...)
 
-25. Deixando nota aqui também sobre [atualização de versão do Ruby ao usar rbenv][ruby_updates]
+25. No caso do Ruby e Rails, como eu tive algumas dores de cabeça até entender legal, vou deixar aqui que a instalação mais fácil que consegui foi através do [Rbenv][def11] para este ambiente.
+
+26. Deixando nota aqui também sobre [atualização de versão do Ruby ao usar rbenv][ruby_updates]
 
 [^1]: Em breve atualizar documentação pra Inglês
 
@@ -149,3 +152,4 @@
 [def11]: https://github.com/rbenv/rbenv#basic-git-checkout
 [mate_installation]: https://wiki.mate-desktop.org/introduction/installation/#linux
 [ruby_updates]: https://github.com/henrique-souza/crypto_wallet/blob/master/docs/notes.md#atualiza%C3%A7%C3%A3o-de-ruby
+[asdf]: https://asdf-vm.com/pt-br/guide/introduction.html#introducao
