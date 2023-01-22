@@ -156,6 +156,50 @@ Para instalá-lo, [siga a documentação][yay_installation], ou:
 
 A partir deste momento, banimos o uso do ```pacman``` e usaremos ```yay``` para instalar dependencias.
 
+## Instalando o **ZSH**
+
+Rodamos
+
+```bash
+yay -S zsh
+```
+
+### Personalizando o ZSH
+
+#### Instalando o **PowerLevel10k**
+
+- Seguir [documentação do PowerLeve10k para Arch Linux][def4]
+
+- Depois do passo da documentação, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch, no Terminal, para o MesloLGS NF recém instalado
+
+- Após instalar e configurar a fonte, precisaremos rodar o comando abaixo para poder instalar as dependências necessárias para o PL10K
+
+    ```bash
+    yay -S powerline-fonts awesome-terminal-fonts
+    ```
+
+Executar o comando ```chsh -s /usr/bin/zsh``` pra [padronizar o zsh como o bash principal][def5]
+
+Abrir nova aba pra poder configurar o ZSH
+
+- Caso queira mudar alguma configuração indesejada, rodar
+
+    ```bash
+    p10k configure
+    ```
+
+### Instalação de Plugins
+
+Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
+
+- Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch usando comando
+
+    ```bash
+    mkdir .zsh
+    ```
+
+- Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
+
 ## Instalando um Gerenciador de versões
 
 ### asdf
@@ -219,50 +263,6 @@ ou (opicional)
 ```bash
 asdf local ruby latest
 ```
-
-### Instalando o **ZSH**
-
-Rodamos
-
-```bash
-yay -S zsh
-```
-
-#### Personalizando o ZSH
-
-##### Instalando o **PowerLevel10k**
-
-- Seguir [documentação do PowerLeve10k para Arch Linux][def4]
-
-- Depois do passo da documentação, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch, no Terminal, para o MesloLGS NF recém instalado
-
-- Após instalar e configurar a fonte, precisaremos rodar o comando abaixo para poder instalar as dependências necessárias para o PL10K
-
-    ```bash
-    yay -S powerline-fonts awesome-terminal-fonts
-    ```
-
-Executar o comando ```chsh -s /usr/bin/zsh``` pra [padronizar o zsh como o bash principal][def5]
-
-Abrir nova aba pra poder configurar o ZSH
-
-- Caso queira mudar alguma configuração indesejada, rodar
-
-    ```bash
-    p10k configure
-    ```
-
-### Instalação de Plugins
-
-Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
-
-- Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch usando comando
-
-    ```bash
-    mkdir .zsh
-    ```
-
-- Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
 
 Instalar linguagem a ser usada e usar o Arch[^1].
 
