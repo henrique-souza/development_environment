@@ -1,10 +1,10 @@
-# Arch Linux com WSL2
+# Arch Linux com WSL 2
 
 ## Instalando o Windows Subsystem for Linux 2
 
-1. Executar ```wsl --install``` em algum Terminal
+Executar ```wsl --install``` em algum Terminal
 
-1. Reinciar o PC e abrir novamente o Terminal
+Reinciar o PC e abrir novamente o Terminal
 
 - Se o computador não iniciar com Ubuntu aberto, abra o Ubuntu através do Terminal
 
@@ -26,79 +26,79 @@ Voltamos para [Documentação do Arch Linux pra WSL 2][def] e seguimos as [Confi
 
 - E digitar (se você estiver na Prompt de Comando, não precisa digitar `.\` no início do comando)
 
-```bash
-.\Arch.exe config --default-user {seu usuário}
-```
+    ```bash
+    .\Arch.exe config --default-user {seu usuário}
+    ```
 
 Para atualizar o Arch, antes dos demais comandos:
 
-```shell
+```bash
 sudo pacman -Syyuu
 ```
 
-## IDE's
+## Instalando IDE's
 
-### Instalando Visual Studio Code
+### Visual Studio Code
 
 Vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra poder instalar e testar o Visual Studio Code no Arch
 
-```shell
+```bash
 sudo pacman -S wget
 ```
 
 > Estava intrigado pra saber qual a IDE que o DHH usa em seus vídeos ou em seu trabalho, e se chama **TextMate**, que é disponível apenas para Mac. Para Linux, temos a opção chamada [**Mate**][mate_installation]
 
-### Instalando LunarVim
+### LunarVim
 
 Para instalar o **LunarVim**, precisamos :
 
 - Instalar **base-devel**
 
-    ```shell
+    ```bash
     sudo pacman -S base-devel
     ```
 
 - Instalar **Git**
 
-    ```shell
+    ```bash
     sudo pacman -S git
     ```
 
   - Configurar o **Git** com os comandos
 
-    ```shell
+    ```bash
     git config --global user.name "Seu nome completo com espaços"
     ```
 
-    ```shell
+    ```bash
     git config --global user.email seuemail@exemplo.br
     ```
 
 - Instalar **NeoVim**
 
-    ```shell
+    ```bash
     sudo pacman -S neovim
     ```
 
   - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **Python**, executando comando abaixo, e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
 
-    ```shell
+    ```bash
     sudo pacman -S python-pip
     ```
 
     - Para [instalar o **Node.js**](https://learn.microsoft.com/pt-br/windows/dev-environment/javascript/nodejs-on-wsl#install-nvm-nodejs-and-npm), precisamos rodar os comandos
 
-        ```shell
+        ```bash
         sudo pacman -S curl
         ```
 
-        ```shell
+        ```bash
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
         ```
 
         e reiniciar o Arch e para instalar o Release do Node
 
-        ```shell
+        ```bash
         nvm install --lts
         ```
 
@@ -112,54 +112,6 @@ Depois dos passos acima, ao digitar ```lvim``` no Terminal, o LunarVim é aberto
 
 - Com a tecla **```Espaço```** dá pra acessar alguns dos **menus principais** do LunarVim e ```Ctrl + H``` vai pro lado esquerdo e ```Ctrl + L``` vai pro lado direito
 
-### Instalando Sublime Text
-
-Para instalar o Sublime Text, podemos seguir a documentação oficial e, no fim, digitar
-
-```shell
-yay -S sublime-text-4
-```
-
-Depois de tudo instalado corretamente, ao digitar `subl` podemos abrir o Sublime.
-
-Instalar o **yay**:
-
-- Abrir a pasta temporária do Arch com ```cd /tmp``` e executar
-
-```shell
-git clone <https://aur.archlinux.org/yay.git> && cd yay && makepkg -si
-```
-
-A partir deste momento, banimos o uso do ```pacman``` e usaremos ```yay``` para instalar dependencias. E vamos instalar o ```zsh```
-
-Instalar o **ZSH**
-
-```shell
-yay -S zsh
-```
-
-Instalar o **PowerLevel10k**:
-
-- Seguir [documentação do PowerLeve10k para Arch Linux][def4]
-
-- Depois do passo da documentação, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch, no Terminal, para o MesloLGS NF recém instalado
-
-- Após instalar e configurar a fonte, precisaremos rodar o comando abaixo para poder instalar as dependências necessárias para o PL10K
-
-```shell
-yay -S powerline-fonts awesome-terminal-fonts
-```
-
-Executar o comando ```chsh -s /usr/bin/zsh``` pra [padronizar o zsh como o Shell principal][def5]
-
-Abrir nova aba pra poder configurar o ZSH
-
-- Caso queira mudar alguma configuração indesejada, rodar
-
-    ```shell
-    p10k configure
-    ```
-
 Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não iremos conseguir, pois ainda falta uma configuração no ZSH:
 
 - Abrir as configurações do ZSH executando ```code ~/.zshrc```
@@ -172,25 +124,47 @@ Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não
 
 - Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
 
-### Instalação de Plugins
+### Sublime Text
 
-Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
+Para instalar o Sublime Text, podemos [seguir a documentação oficial][subl_docs] e, no fim, digitar
 
-- Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch usando comando
+```bash
+sudo pacman -Syu sublime-text
+```
 
-    ```shell
-    mkdir .zsh
+ou
+
+```bash
+yay -S sublime-text-{VERSION}
+```
+
+Depois de tudo instalado corretamente, ao digitar `subl` podemos abrir o Sublime.
+
+## Instalando outros Gerenciadores de Pacote
+
+### yay
+
+O **yay** é um Arch User Repository (AUR), diferente do `pacman`.
+
+Para instalá-lo, [siga a documentação][yay_installation], ou:
+
+- Abrir a pasta temporária do Arch com ```cd /tmp``` e executar
+
+    ```bash
+    git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     ```
 
-- Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
+A partir deste momento, banimos o uso do ```pacman``` e usaremos ```yay``` para instalar dependencias.
 
-## Instalação de Gerenciador de Pacotes
+## Instalando um Gerenciador de versões
 
-Instalar o [asdf][asdf]
+### asdf
+
+O `asdf` auxilia   [Seguindo a documentação do asdf][asdf]
 
 - Rodamos
 
-    ```shell
+    ```bash
     yay -S asdf-vm
     ```
 
@@ -204,7 +178,7 @@ Instalar o [asdf][asdf]
 
 - A partir daqui você pode seguir a documentação do asdf para [instalação da sua linguagem através de plugins][asdf_plugins]. No meu caso, preciso instalar Ruby, então precisei digitar
 
-    ```shell
+    ```bash
     asdf plugin add ruby
     ```
 
@@ -212,45 +186,89 @@ Instalar o [asdf][asdf]
 
 - Pra baixar e configurar a versão que estou usando em meus projetos atuais, precisei rodar
 
-    ```shell
+    ```bash
     asdf install ruby 3.2.0
     ```
 
 - ou use latest APENAS SE caso a ultima versão seja realmente a que você quer. **Prefira os números de qualquer forma**
 
-    ```shell
+    ```bash
     asdf install ruby latest
     ```
 
 Pra poder dizer que essa versão do Ruby é a versão que quero para todo meu ambiente e seus projetos futuros, rodamos
 
-```shell
+```bash
 asdf global ruby 3.2.0
 ```
 
 ou (opicional)
 
-```shell
+```bash
 asdf global ruby latest
 ```
 
 - Pra poder mudar a versão do Ruby localmente em algum projeto, rodamos
 
-    ```shell
+    ```bash
     asdf local ruby 3.2.0
     ```
 
 ou (opicional)
 
-```shell
+```bash
 asdf local ruby latest
 ```
+
+### Instalando o **ZSH**
+
+Rodamos
+
+```bash
+yay -S zsh
+```
+
+#### Personalizando o ZSH
+
+##### Instalando o **PowerLevel10k**
+
+- Seguir [documentação do PowerLeve10k para Arch Linux][def4]
+
+- Depois do passo da documentação, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch, no Terminal, para o MesloLGS NF recém instalado
+
+- Após instalar e configurar a fonte, precisaremos rodar o comando abaixo para poder instalar as dependências necessárias para o PL10K
+
+    ```bash
+    yay -S powerline-fonts awesome-terminal-fonts
+    ```
+
+Executar o comando ```chsh -s /usr/bin/zsh``` pra [padronizar o zsh como o bash principal][def5]
+
+Abrir nova aba pra poder configurar o ZSH
+
+- Caso queira mudar alguma configuração indesejada, rodar
+
+    ```bash
+    p10k configure
+    ```
+
+### Instalação de Plugins
+
+Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
+
+- Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch usando comando
+
+    ```bash
+    mkdir .zsh
+    ```
+
+- Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
 
 Instalar linguagem a ser usada e usar o Arch[^1].
 
 Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar
 
-```shell
+```bash
 chmod +x bin/setup
 ```
 
@@ -258,12 +276,22 @@ No caso do Ruby e Rails, como eu tive algumas dores de cabeça até entender leg
 
 Deixando nota aqui também sobre [atualização de versão do Ruby ao usar rbenv][ruby_updates]
 
+[^1]: Em breve atualizar documentação pra Inglês
+
 [def]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/
 [def2]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/#configura%C3%A7%C3%A3o-ap%C3%B3s-a-instala%C3%A7%C3%A3o
 [def3]: https://www.lunarvim.org/docs/installation#prerequisites
+[def4]: https://github.com/romkatv/powerlevel10k#arch-linux
+[def5]: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
+[def6]: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
 [def7]: https://www.rust-lang.org/tools/install
 [def8]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/#inicializar-o-chaveiro
 [def9]: https://www.lunarvim.org/docs/installation#release
+[def10]: https://github.com/romkatv/powerlevel10k#manual-font-installation
 [def11]: https://github.com/rbenv/rbenv#basic-git-checkout
 [mate_installation]: https://wiki.mate-desktop.org/introduction/installation/#linux
 [ruby_updates]: https://github.com/henrique-souza/crypto_wallet/blob/master/docs/notes.md#atualiza%C3%A7%C3%A3o-de-ruby
+[asdf]: https://asdf-vm.com/pt-br/guide/introduction.html#introducao
+[asdf_plugins]: https://asdf-vm.com/pt-br/guide/getting-started.html#_4-instalando-um-plugin
+[subl_docs]: https://www.sublimetext.com/docs/linux_repositories.html#pacman
+[yay_installation]: https://github.com/Jguer/yay#installation
