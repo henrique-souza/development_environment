@@ -142,9 +142,9 @@ Depois de tudo instalado corretamente, ao digitar `subl` podemos abrir o Sublime
 
 #### Instalando Sublime Merge
 
-Sublime Merge é a ferramenta de controle de versão do Sublime Text e age em conjunto com a IDE. Pra instalar [devemos seguir a documentação][sublime_merge]
+Sublime Merge é a ferramenta de controle de versão do Sublime Text e age em conjunto com a IDE. Pra instalar [devemos seguir a documentação][sublime_merge].
 
-O uso é dentro do Sublime Text mesmo, ao clicar no **nome da branch** ao lado direito inferior da IDE. 
+O uso é dentro do Sublime Text mesmo, ao clicar no **nome da branch** ao lado direito inferior da IDE.
 
 ## Instalando outros Gerenciadores de Pacote
 
