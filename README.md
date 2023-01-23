@@ -140,6 +140,12 @@ yay -S sublime-text-{VERSION}
 
 Depois de tudo instalado corretamente, ao digitar `subl` podemos abrir o Sublime.
 
+#### Instalando Sublime Merge
+
+Sublime Merge é a ferramenta de controle de versão do Sublime Text e age em conjunto com a IDE. Pra instalar [devemos seguir a documentação][sublime_merge]
+
+O uso é dentro do Sublime Text mesmo, ao clicar no **nome da branch** ao lado direito inferior da IDE. 
+
 ## Instalando outros Gerenciadores de Pacote
 
 ### yay
@@ -295,3 +301,4 @@ Deixando nota aqui também sobre [atualização de versão do Ruby ao usar rbenv
 [asdf_plugins]: https://asdf-vm.com/pt-br/guide/getting-started.html#_4-instalando-um-plugin
 [subl_docs]: https://www.sublimetext.com/docs/linux_repositories.html#pacman
 [yay_installation]: https://github.com/Jguer/yay#installation
+[sublime_merge]: https://www.sublimemerge.com/docs/linux_repositories#pacman
