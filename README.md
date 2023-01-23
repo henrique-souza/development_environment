@@ -146,6 +146,24 @@ Sublime Merge é a ferramenta de controle de versão do Sublime Text e age em co
 
 O uso é dentro do Sublime Text mesmo, ao clicar no **nome da branch** ao lado direito inferior da IDE.
 
+### JetBrains
+
+Para instalar alguma IDE da JetBrains, precisamos rodar
+
+```shell
+yay -S fuse
+```
+
+que instala dependências para que a Toolbox da Jetbrains seja aberta, e
+
+```shell
+yay -S jetbrains-toolbox
+```
+
+para justamente instalar o gerenciador de IDE's da Jetbrains. Depois de tudo instalado, rode um `which jetbrains-toolbox` e depois `cd {PATH jetbrains-toolbox}` para ir até o caminho e abra a Box com o comando `jetbrains-toolbox`.
+
+<!-- Depois só configurar usuário e procurar documentação sobre como chamar sua IDE preferida. No meu caso, uso  -->
+
 ## Instalando outros Gerenciadores de Pacote
 
 ### yay
