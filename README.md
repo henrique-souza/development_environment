@@ -38,6 +38,8 @@ sudo pacman -Syyuu
 
 ## Instalando IDE's
 
+> Estava intrigado pra saber qual a IDE que o DHH usa em seus vídeos ou em seu trabalho, e se chama **TextMate**, que é disponível apenas para Mac. Para Linux, temos a opção chamada [**Mate**][mate_installation], mas ainda não consegui tempo pra testar. Parece muito com o [Sublime Text](https://github.com/henrique-souza/development_environment#sublime-text)
+
 ### Visual Studio Code
 
 Vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra poder instalar e testar o Visual Studio Code no Arch
@@ -46,7 +48,7 @@ Vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra po
 sudo pacman -S wget
 ```
 
-> Estava intrigado pra saber qual a IDE que o DHH usa em seus vídeos ou em seu trabalho, e se chama **TextMate**, que é disponível apenas para Mac. Para Linux, temos a opção chamada [**Mate**][mate_installation]
+Pra [Ruby usei algumas anotações][notes_medium_vscode] de um usuário de VSCode pra poder realizar as configurações
 
 ### LunarVim
 
@@ -320,3 +322,4 @@ Deixando nota aqui também sobre [atualização de versão do Ruby ao usar rbenv
 [subl_docs]: https://www.sublimetext.com/docs/linux_repositories.html#pacman
 [yay_installation]: https://github.com/Jguer/yay#installation
 [sublime_merge]: https://www.sublimemerge.com/docs/linux_repositories#pacman
+[notes_medium_vscode]: https://betterprogramming.pub/unlock-the-potential-of-vs-code-for-ruby-programming-c8d853fc77ab
