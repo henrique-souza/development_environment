@@ -290,6 +290,16 @@ ou (opicional)
 asdf local ruby latest
 ```
 
+## Instalando Docker
+
+- Instalar [docker-desktop pra Windows](https://www.docker.com/products/docker-desktop/), e depois rodar (ainda escrevendo...)
+
+```bash
+yay -S docker
+```
+
+## Por fim
+
 Instalar linguagem a ser usada e usar o Arch[^1].
 
 Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, precisamos rodar
@@ -297,10 +307,6 @@ Pra habilitar o comando ```./bin/setup``` (**no caso do Rails**) no Terminal, pr
 ```bash
 chmod +x bin/setup
 ```
-
-No caso do Ruby e Rails, como eu tive algumas dores de cabeça até entender legal, vou deixar aqui que a instalação mais fácil que consegui foi através do [Rbenv][def11] para este ambiente.
-
-Deixando nota aqui também sobre [atualização de versão do Ruby ao usar rbenv][ruby_updates]
 
 [^1]: Em breve atualizar documentação pra Inglês
 
@@ -314,9 +320,7 @@ Deixando nota aqui também sobre [atualização de versão do Ruby ao usar rbenv
 [def8]: https://wsldl-pg.github.io/ArchW-docs/locale/pt-BR/How-to-Setup/#inicializar-o-chaveiro
 [def9]: https://www.lunarvim.org/docs/installation#release
 [def10]: https://github.com/romkatv/powerlevel10k#manual-font-installation
-[def11]: https://github.com/rbenv/rbenv#basic-git-checkout
 [mate_installation]: https://wiki.mate-desktop.org/introduction/installation/#linux
-[ruby_updates]: https://github.com/henrique-souza/crypto_wallet/blob/master/docs/notes.md#atualiza%C3%A7%C3%A3o-de-ruby
 [asdf]: https://asdf-vm.com/pt-br/guide/introduction.html#introducao
 [asdf_plugins]: https://asdf-vm.com/pt-br/guide/getting-started.html#_4-instalando-um-plugin
 [subl_docs]: https://www.sublimetext.com/docs/linux_repositories.html#pacman
