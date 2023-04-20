@@ -48,7 +48,7 @@ Vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra po
 sudo pacman -S wget
 ```
 
-Pra [Ruby usei algumas anotações][notes_medium_vscode] de um usuário de VSCode pra poder realizar as configurações
+A Microsoft disponibilizou um [guia para instalação de Ruby no VS Code][ruby_on_vscode] recentemente, com o uso da extensão poderosa **Ruby LSP**
 
 ### LunarVim
 
@@ -290,13 +290,18 @@ ou (opicional)
 asdf local ruby latest
 ```
 
-## Instalando Docker
+<!--
+## Instalando Microsoft Edge
+
+chamando o comando microsoft-edge-stable
+
+ ## Instalando Docker
 
 - Instalar [docker-desktop pra Windows](https://www.docker.com/products/docker-desktop/), e depois rodar (ainda escrevendo...)
 
 ```bash
 yay -S docker
-```
+``` -->
 
 ## Por fim
 
@@ -326,4 +331,4 @@ chmod +x bin/setup
 [subl_docs]: https://www.sublimetext.com/docs/linux_repositories.html#pacman
 [yay_installation]: https://github.com/Jguer/yay#installation
 [sublime_merge]: https://www.sublimemerge.com/docs/linux_repositories#pacman
-[notes_medium_vscode]: https://betterprogramming.pub/unlock-the-potential-of-vs-code-for-ruby-programming-c8d853fc77ab
+[ruby_on_vscode]: https://code.visualstudio.com/docs/languages/ruby
