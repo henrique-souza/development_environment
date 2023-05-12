@@ -1,6 +1,23 @@
 # Arch Linux com WSL 2
 
-## Instalando o Windows Subsystem for Linux 2
+## Sumário
+
+1. [WSL2](#instalando-o-wsl2)
+1. [IDE's](#instalando-ides)
+    1. [VSCode](#visual-studio-code)
+    1. [LunarVim](#lunarvim)
+    1. [SublimeText](#sublime-text)
+        1. [SublimeMerge](#instalando-sublime-merge)
+    1. [Jetbrains](#jetbrains)
+1. [Gerenciadores de Pacote](#instalando-outros-gerenciadores-de-pacote)
+    1. [yay](#yay)
+1. [ZSH](#instalando-o-zsh)
+    1. [PowerLevel10k](#instalando-o-powerlevel10k)
+    1. [ZSH Autosuggestions](#instalação-de-plugins)
+1. [Gerenciador de Versões](#instalando-um-gerenciador-de-versões)
+    1. [asdf](#asdf)
+
+## Instalando o WSL2
 
 Executar ```wsl --install``` em algum Terminal
 
