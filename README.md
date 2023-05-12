@@ -3,6 +3,7 @@
 ## Sumário
 
 1. [WSL2](#instalando-o-wsl2)
+1. [Primeiros comandos/configurações](#primeiros-comandos-e-configurações)
 1. [IDE's](#instalando-ides)
     1. [VSCode](#visual-studio-code)
     1. [LunarVim](#lunarvim)
@@ -53,23 +54,7 @@ Para atualizar o Arch, antes dos demais comandos:
 sudo pacman -Syyuu
 ```
 
-## Instalando IDE's
-
-> Estava intrigado pra saber qual a IDE que o DHH usa em seus vídeos ou em seu trabalho, e se chama **TextMate**, que é disponível apenas para Mac. Para Linux, temos a opção chamada [**Mate**][mate_installation], mas ainda não consegui tempo pra testar. Parece muito com o [Sublime Text](https://github.com/henrique-souza/development_environment#sublime-text)
-
-### Visual Studio Code
-
-Vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra poder instalar e testar o Visual Studio Code no Arch
-
-```bash
-sudo pacman -S wget
-```
-
-A Microsoft disponibilizou um [guia para instalação de Ruby no VS Code][ruby_on_vscode] recentemente, com o uso da extensão poderosa **Ruby LSP**
-
-### LunarVim
-
-Para instalar o **LunarVim**, precisamos :
+## Primeiros comandos e configurações
 
 1. Instalar **base-devel**
 
@@ -92,6 +77,24 @@ Para instalar o **LunarVim**, precisamos :
         ```bash
         git config --global user.email seuemail@exemplo.br
         ```
+
+## Instalando IDE's
+
+> Estava intrigado pra saber qual a IDE que o DHH usa em seus vídeos ou em seu trabalho, e se chama **TextMate**, que é disponível apenas para Mac. Para Linux, temos a opção chamada [**Mate**][mate_installation], mas ainda não consegui tempo pra testar. Parece muito com o [Sublime Text](https://github.com/henrique-souza/development_environment#sublime-text)
+
+### Visual Studio Code
+
+Vamos executar o comando abaixo e depois digitar ```code .``` no Terminal pra poder instalar e testar o Visual Studio Code no Arch
+
+```bash
+sudo pacman -S wget
+```
+
+A Microsoft disponibilizou um [guia para instalação de Ruby no VS Code][ruby_on_vscode] recentemente, com o uso da extensão poderosa **Ruby LSP**
+
+### LunarVim
+
+Para instalar o **LunarVim**, precisamos:
 
 1. Instalar **NeoVim**
 
