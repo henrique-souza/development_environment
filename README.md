@@ -37,11 +37,11 @@ Depois do Arch instalado, verifique se a opção "**Executar esse perfil como Ad
 
 Voltamos para [Documentação do Arch Linux pra WSL 2][def] e seguimos as [Configurações após a instalação][def2]. Vamos até os [passos finais][def8] neste tópico
 
-- Nos comandos iniciais, precisamos avisar qual usuário será o padrão para o Arch e, pra isso, precisamos abrir novamente o Terminal (sem ser o do Arch)
+1. Nos comandos iniciais, precisamos avisar qual usuário será o padrão para o Arch e, pra isso, precisamos abrir novamente o Terminal (sem ser o do Arch)
 
-- Abrir a pasta com ```cd Arch```
+1. Abrir a pasta com ```cd Arch```
 
-- E digitar (se você estiver na Prompt de Comando, não precisa digitar `.\` no início do comando)
+1. E digitar (se você estiver na Prompt de Comando, não precisa digitar `.\` no início do comando)
 
     ```bash
     .\Arch.exe config --default-user {seu usuário}
@@ -71,41 +71,41 @@ A Microsoft disponibilizou um [guia para instalação de Ruby no VS Code][ruby_o
 
 Para instalar o **LunarVim**, precisamos :
 
-- Instalar **base-devel**
+1. Instalar **base-devel**
 
     ```bash
     sudo pacman -S base-devel
     ```
 
-- Instalar **Git**
+1. Instalar **Git**
 
     ```bash
     sudo pacman -S git
     ```
 
-  - Configurar o **Git** com os comandos
+    1. Configurar o **Git** com os comandos
 
-    ```bash
-    git config --global user.name "Seu nome completo com espaços"
-    ```
+        ```bash
+        git config --global user.name "Seu nome completo com espaços"
+        ```
 
-    ```bash
-    git config --global user.email seuemail@exemplo.br
-    ```
+        ```bash
+        git config --global user.email seuemail@exemplo.br
+        ```
 
-- Instalar **NeoVim**
+1. Instalar **NeoVim**
 
     ```bash
     sudo pacman -S neovim
     ```
 
-  - E seguir as instalações que a [Documentação do LunarVim lista][def3], como **Python**, executando comando abaixo, e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
+1. E seguir as instalações que a [Documentação do LunarVim lista][def3], como **Python**, executando comando abaixo, e principalmente o [**Cargo** (gestor de sistema e pacotes de **Rust**)][def7].
 
     ```bash
     sudo pacman -S python-pip
     ```
 
-    - Para [instalar o **Node.js**](https://learn.microsoft.com/pt-br/windows/dev-environment/javascript/nodejs-on-wsl#install-nvm-nodejs-and-npm), precisamos rodar os comandos
+    1. Para [instalar o **Node.js**](https://learn.microsoft.com/pt-br/windows/dev-environment/javascript/nodejs-on-wsl#install-nvm-nodejs-and-npm), precisamos rodar os comandos
 
         ```bash
         sudo pacman -S curl
@@ -133,15 +133,15 @@ Depois dos passos acima, ao digitar ```lvim``` no Terminal, o LunarVim é aberto
 
 Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não iremos conseguir, pois ainda falta uma configuração no ZSH:
 
-- Abrir as configurações do ZSH executando ```code ~/.zshrc```
+1. Abrir as configurações do ZSH executando ```code ~/.zshrc```
 
-- E colar o comando abaixo no final do documento e salvar o documento
+1. E colar o comando abaixo no final do documento e salvar o documento
 
     ```bash
     export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
     ```
 
-- Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
+1. Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
 
 ### Sublime Text
 
@@ -211,11 +211,11 @@ yay -S zsh
 
 #### Instalando o **PowerLevel10k**
 
-- Seguir [documentação do PowerLeve10k para Arch Linux][def4]
+1. Seguir [documentação do PowerLeve10k para Arch Linux][def4]
 
-- Depois do passo da documentação, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch, no Terminal, para o MesloLGS NF recém instalado
+1. Depois do passo da documentação, precisamos instalar o [pacote de fontes MesloLGS NF][def10] e mudar o **Tipo de fonte** do perfil do Arch, no Terminal, para o MesloLGS NF recém instalado
 
-- Após instalar e configurar a fonte, precisaremos rodar o comando abaixo para poder instalar as dependências necessárias para o PL10K
+1. Após instalar e configurar a fonte, precisaremos rodar o comando abaixo para poder instalar as dependências necessárias para o PL10K
 
     ```bash
     yay -S powerline-fonts awesome-terminal-fonts
@@ -235,13 +235,13 @@ Abrir nova aba pra poder configurar o ZSH
 
 Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
 
-- Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch usando comando
+1. Primeiro vamos criar uma pasta chamada ```.zsh``` na home do Arch usando comando
 
     ```bash
     mkdir .zsh
     ```
 
-- Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
+1. Depois iremos seguir a [instalação da documentação][def6] e abrir novo terminal pra settar o novo plugin
 
 ## Instalando um Gerenciador de versões
 
@@ -249,39 +249,39 @@ Um plugin conhecido pro ZSH seria o [zsh-autosuggestions][def6]:
 
 O `asdf` auxilia   [Seguindo a documentação do asdf][asdf]
 
-- Rodamos
+1. Rodamos
 
     ```bash
     yay -S asdf-vm
     ```
 
-- Caso ele peça algumas dependências no final da instalação, pode instalar para que tudo funcione 100% garantido.
+1. Caso ele peça algumas dependências no final da instalação, pode instalar para que tudo funcione 100% garantido.
 
-- Vamos abrir novamente o ```.zshrc``` com ```code ~/.zshrc``` pra poder settar o asdf toda vez que abrimos o terminal, colando o comando abaixo e reiniciamos o Terminal:
+1. Vamos abrir novamente o ```.zshrc``` com ```code ~/.zshrc``` pra poder settar o asdf toda vez que abrimos o terminal, colando o comando abaixo e reiniciamos o Terminal:
 
     ```bash
     source /opt/asdf-vm/asdf.sh
     ```
 
-- A partir daqui você pode seguir a documentação do asdf para [instalação da sua linguagem através de plugins][asdf_plugins]. No meu caso, preciso instalar Ruby, então precisei digitar
+1. A partir daqui você pode seguir a documentação do asdf para [instalação da sua linguagem através de plugins][asdf_plugins]. No meu caso, preciso instalar Ruby, então precisei digitar
 
     ```bash
     asdf plugin add ruby
     ```
 
-- Depois de instalado plugin do Ruby, posso consultar uma lista das versões de Ruby que posso baixar usando ```asdf list-all ruby```
+1. Depois de instalado plugin do Ruby, posso consultar uma lista das versões de Ruby que posso baixar usando ```asdf list-all ruby```
 
-- Pra baixar e configurar a versão que estou usando em meus projetos atuais, precisei rodar
+1. Pra baixar e configurar a versão que estou usando em meus projetos atuais, precisei rodar
 
     ```bash
     asdf install ruby 3.2.0
     ```
 
-- ou use latest APENAS SE caso a ultima versão seja realmente a que você quer. **Prefira os números de qualquer forma**
+    - ou use latest APENAS SE caso a ultima versão seja realmente a que você quer. **Prefira os números de qualquer forma**
 
-    ```bash
-    asdf install ruby latest
-    ```
+        ```bash
+        asdf install ruby latest
+        ```
 
 Pra poder dizer que essa versão do Ruby é a versão que quero para todo meu ambiente e seus projetos futuros, rodamos
 
