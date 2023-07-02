@@ -202,6 +202,14 @@ Para instalá-lo, [siga a documentação][yay_installation], ou:
 
 A partir deste momento, banimos o uso do ```pacman``` e usaremos ```yay``` para instalar dependencias.
 
+## Instalando GitHub CLI
+
+Para gerenciar senhas a cada `git push`, será necessário instalar a ferramenta do GitHub CLI e depois digitar `gh` no terminal e seguir as instruções. O comando para instalação do CLI é 
+
+```bash
+    yay -S github-cli
+```
+
 ## Instalando o **ZSH**
 
 Rodamos
