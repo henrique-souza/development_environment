@@ -12,6 +12,7 @@
     1. [Jetbrains](#jetbrains)
 1. [Gerenciadores de Pacote](#instalando-outros-gerenciadores-de-pacote)
     1. [yay](#yay)
+1. [Instalando GitHub CLI](#instalando-github-cli)
 1. [ZSH](#instalando-o-zsh)
     1. [PowerLevel10k](#instalando-o-powerlevel10k)
     1. [ZSH Autosuggestions](#instalação-de-plugins)
