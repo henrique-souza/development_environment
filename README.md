@@ -78,6 +78,13 @@ sudo pacman -Syyuu
         ```bash
         git config --global user.email seuemail@exemplo.br
         ```
+Se preferir, já adiante a configuração do token do GitHub ao seu terminal, instalando o [GitHub CLI][github_cli] e copiando seu token [(passo a passo de como fazer um está aqui)][github_token], você poderá configurá-lo usando o comando abaixo e seguindo as instruções:
+
+```bash
+gh auth login
+```
+
+Isso vai evitar mensagens chatas de erros com o gerenciamento dos seus repositórios no GitHub. Lembre-se de renovar sempre os Tokens e cadastrá-los novamente.
 
 ## Instalando IDE's
 
@@ -205,7 +212,7 @@ A partir deste momento, banimos o uso do ```pacman``` e usaremos ```yay``` para 
 
 ## Instalando GitHub CLI
 
-Para gerenciar senhas a cada `git push`, será necessário instalar a ferramenta do GitHub CLI e depois digitar `gh` no terminal e seguir as instruções. O comando para instalação do CLI é 
+Para gerenciar senhas a cada `git push`, será necessário instalar a ferramenta do GitHub CLI e depois digitar `gh` no terminal e seguir as instruções. O comando para instalação do CLI é
 
 ```bash
 yay -S github-cli
@@ -361,3 +368,5 @@ chmod +x bin/setup
 [yay_installation]: https://github.com/Jguer/yay#installation
 [sublime_merge]: https://www.sublimemerge.com/docs/linux_repositories#pacman
 [ruby_on_vscode]: https://code.visualstudio.com/docs/languages/ruby
+[github_cli]: https://github.com/cli/cli
+[github_token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
