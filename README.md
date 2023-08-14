@@ -157,6 +157,10 @@ Se tentar abrir o LunarVim de qualquer lugar dentro do Arch, neste momento, não
 
 1. Ao abrir novamente o Arch, podemos rodar ```lvim``` na HOME para poder chamar o Lunar Vim.
 
+### AstroNvim
+
+O AstroNvim tem sido uma ótima descoberta pra mim e creio que seja também uma ótima IDE para usar para desenvolvimento. Siga os passos [da documentação oficial do site do AstroNvim][astronvim] para instalação.
+
 ### Sublime Text
 
 Para instalar o Sublime Text, podemos [seguir a documentação oficial][subl_docs] e, no fim, digitar
@@ -373,3 +377,4 @@ chmod +x bin/setup
 [ruby_on_vscode]: https://code.visualstudio.com/docs/languages/ruby
 [github_cli]: https://github.com/cli/cli
 [github_token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+[astronvim]: https://astronvim.com/
