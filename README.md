@@ -55,6 +55,12 @@ Para atualizar o Arch, antes dos demais comandos:
 sudo pacman -Syyuu
 ```
 
+Às vezes será necessário atualizar as credenciais do sistema. Pra isso podemos utilizar:
+
+```bash
+sudo pacman-key --refresh-keys
+```
+
 ## Primeiros comandos e configurações
 
 1. Instalar **base-devel**
