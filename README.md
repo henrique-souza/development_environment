@@ -55,8 +55,12 @@ Para atualizar o Arch, antes dos demais comandos:
 sudo pacman -Syyuu
 ```
 
-Às vezes será necessário atualizar as credenciais do sistema. Pra isso podemos utilizar:
+Às vezes será necessário ficar em dia com as credenciais do sistema. Pra isso deve-se utilizar:
 
+```bash
+sudo pacman -Syy archlinux-keyring
+```
+E depois, para atualizar as keys do Arch Linux:
 ```bash
 sudo pacman-key --refresh-keys
 ```
