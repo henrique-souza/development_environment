@@ -14,20 +14,20 @@ INSTALL_P10K_FONTS="${INSTALL_P10K_FONTS:-1}"  # 0 para pular fontes Meslo
 # ./bootstrap.sh
 
 # ======== Pré-requisitos / sudo ========
-sudo -v || true
+# -v || true
 
 # ======== Keyring e atualização inicial (Arch/WSL) ========
 # Mantém o chaveiro coerente e sistema atualizado
-if ! pacman -Qi archlinux-keyring >/dev/null 2>&1; then
-  sudo pacman -Sy --noconfirm archlinux-keyring || true
-fi
-sudo pacman-key --init || true
-sudo pacman-key --populate archlinux || true
+#if ! pacman -Qi archlinux-keyring >/dev/null 2>&1; then
+#  pacman -Sy --noconfirm archlinux-keyring || true
+#fi
+#pacman-key --init || true
+#sudo pacman-key --populate archlinux || true
 
-sudo pacman -Syu --noconfirm
+#sudo pacman -Syu --noconfirm
 
 # ======== Pacotes base ========
-sudo pacman -S --needed --noconfirm base-devel git curl wget unzip zip openssh zsh fontconfig gnupg
+pacman -S --needed --noconfirm base-devel git curl wget unzip zip openssh zsh fontconfig gnupg
 
 # ======== Git ========
 git config --global user.name "$GIT_NAME"
